@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="batch1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="./asset/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="dangote">
+        <section class="sidebar-con">
+            <div class="sidebar">
+                <div class="overlay"></div>
+
+                
+                <div class="dan_logo">
+                        <img src="asset/dan-logo.png" alt="">
+                   </div>
+   
+                   <div class="home_nav">
+
+                        <a href="index.html">
+                            <div class="home_icon active">
+                                <img src="asset/house.png" alt="">
+                                <p>Overview</p>
+                            </div>
+                        </a>
+                        
+                        <a href="auth_1.html">
+                            <div class="home_icon">
+                                <img src="asset/Subtract.png" alt="">
+                                <p>Authentication</p>
+                            </div>
+                        </a>
+                        
+                        <a href="login.html">
+                            <div class="home_icon logout">
+                                <img src="asset/logout.png" alt="">
+                                <p>Logout</p>
+                            </div>
+                        </a>
+                   </div>
+                   
+
+            </div>
+
+        </section>
+        <section class="main-content">
+            <div class="content-con">
+                <!-- user-sec -->
+                <div class="user">
+                    <img src="asset/profile.png" alt="">
+                    <a href="#">abc@dangote.gmail</a>
+                </div>
+
+                <!-- 2 -->
+                <div>
+                    <div class="batch1-header">
+                        <a href="index.html">
+                            <img src="asset/back_icon.png" alt="">
+                            <h2>Go back<h2>
+                        </a>
+                        <h1>Dashboard Overview</h1>
+                        <div class="hero">
+                            <div class="spot"></div>
+                            <h3>Batch 1</h3>
+                        </div>
+                            
+                        
+                        <!-- <h3>Batch 1</h3> -->
+                    </div>
+                    <div class="card-con">
+                        <!-- 1st card -->                        
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="inside-card">
+                                    <div class="no1-style">
+                                        <p>100</p>  
+                                    </div>
+                                    <div class="text1">
+                                        <h2>Supplied</h2>
+                                        <p>6,665,999</p>
+                                    </div>
+                                    <div class="text2">
+                                        <h2>Redeemed</h2>
+                                        <p>6,005,999</p>
+                                    </div>
+                                    <div class="text3">
+                                        <h2>Failed</h2>
+                                        <p>66,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2nd card -->
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="inside-card">
+                                    <div class="no1-style">
+                                        <p> 100</p>
+                                        
+                                    </div>
+                                    <div class="text1">
+                                        <h2>Supplied</h2>
+                                        <p>6,665,999</p>
+                                    </div>
+                                    <div class="text2">
+                                        <h2>Redeemed</h2>
+                                        <p>6,005,999</p>
+                                    </div>
+                                    <div class="text3">
+                                        <h2>Failed</h2>
+                                        <p>66,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3rd card -->
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="inside-card">
+                                        <div class="no1-style">
+                                                <p>100</p>  
+                                            </div>
+                                    <div class="text1">
+                                        <h2>Supplied</h2>
+                                        <p>6,665,999</p>
+                                    </div>
+                                    <div class="text2">
+                                        <h2>Redeemed</h2>
+                                        <p>6,005,999</p>
+                                    </div>
+                                    <div class="text3">
+                                        <h2>Failed</h2>
+                                        <p>66,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="no-of-pins">
+                        <h2>Number of PINS awarded</h2>
+                        <!-- <input type="date" name="" id=""> -->
+                        <input type="date" value="yy-mm-dd" min="2018-01-01" max="2021-12-31">
+                        
+                    </div>
+                    <!-- graph -->
+                    <div class="graph">
+
+
+                        <div class="col-md-6 offset-md-3 my-5">
+                            <div class=" cardd graphh">
+                                <div class="card-body">
+                                    <!-- <p>Getting started with Chart JS | Chart JS Courses</p>
+                                    <hr> -->
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        
+                        <!-- <script>
+                            // === include 'setup' then 'config' above ===
+                            const labels = [
+                                'January',
+                                'February',
+                                'March',
+                                'April',
+                                'May',
+                                'June',
+                            ];
+                            const data = {
+                                labels: labels,
+                                datasets: [{
+                                label: 'Batch 1',
+                                backgroundColor: 'rgb(0, 99, 132)',
+                                borderColor: 'rgb(0, 99, 132)',
+                                data: [0, 10, 5, 2, 20, 30, 45],
+                                tension: 0.4
+                            }]
+                            };
+                    
+                            const config = {
+                            //type of chart  
+                            type: 'line',
+                            data,
+                            options: {}
+                            };
+                        
+                            var myChart = new Chart(
+                                document.getElementById('myChart'),
+                                config
+                            );
+                        </script> -->
+
+
+
+
+
+
+                        <!-- <div>
+                            <h1>G</h1>
+                        </div>
+                         <div>
+                            <h1>R</h1>
+                        </div>
+                        <div>
+                            <h1>A</h1>
+                        </div>
+                        <div>
+                            <h1>P</h1>
+                        </div>
+                        <div>
+                            <h1>H</h1>
+                        </div>           -->
+                    </div>
+                    <!-- reharge card winners table -->
+                    <div>
+                        <div class="winners-header">
+                            <h3>Recharge Card Winners</h3>
+                            <div class="yo">
+                                <img src="./asset/search.png" alt="yo" srcset="">                                
+                                <input type="search" placeholder=" Search phone number,gift type, & date" class="form_control">   
+                            </div>
+                        </div>
+
+                         <!-- table -->
+                        <div class="table">
+                            <form action="">
+                                
+                            </form>
+                            <table>
+                                <tr>
+                                    <td>Phone Number</td>
+                                    <td>Gift Type</td>
+                                    <td>Time</td>
+                                    <td>Date</td>
+                                </tr>
+                                <tr>
+                                    <td>+2348091923456</td>
+                                    <td>Recharge Card</td>
+                                    <td>12:21pm</td>
+                                    <td>28-01-2021</td>
+                                </tr>
+                                <tr>
+                                    <td>+2348091923456</td>
+                                    <td>Recharge Card</td>
+                                    <td>12:21pm</td>
+                                    <td>28-01-2021</td>
+                                </tr>
+                                <tr>
+                                    <td>+2348091923456</td>
+                                    <td>Recharge Card</td>
+                                    <td>12:21pm</td>
+                                    <td>28-01-2021</td>
+                                </tr>
+                                <tr>
+                                    <td>+2348091923456</td>
+                                    <td>Recharge Card</td>
+                                    <td>12:21pm</td>
+                                    <td>28-01-2021</td>
+                                </tr>
+                                <tr>
+                                    <td>+2348091923456</td>
+                                    <td>Recharge Card</td>
+                                    <td>12:21pm</td>
+                                    <td>28-01-2021</td>
+                                </tr>
+                                <tr>
+                                    <td>+2348091923456</td>
+                                    <td>Recharge Card</td>
+                                    <td>12:21pm</td>
+                                    <td>28-01-2021</td>
+                                </tr>
+                                <tr>
+                                    <td>+2348091923456</td>
+                                    <td>Recharge Card</td>
+                                    <td>12:21pm</td>
+                                    <td>28-01-2021</td>
+                                </tr>
+                                <tr>
+                                    <td>+2348091923456</td>
+                                    <td>Recharge Card</td>
+                                    <td>12:21pm</td>
+                                    <td>28-01-2021</td>
+                                </tr>
+                                <tr>
+                                    <td>+2348091923456</td>
+                                    <td>Recharge Card</td>
+                                    <td>12:21pm</td>
+                                    <td>28-01-2021</td>
+                                </tr>
+                                <tr>
+                                    <td>+2348091923456</td>
+                                    <td>Recharge Card</td>
+                                    <td>12:21pm</td>
+                                    <td>28-01-2021</td>
+                                </tr>
+                                
+                            </table>
+                            <div class="next">
+                                <h2>1-10 0f 100    </h2>
+                                <div class="nxt">
+                                    <a href="#">&#8249;</a>
+                                    <a href="#">&#8250;</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="chart.js"></script>
+    <script src="index.js"></script>
+
+
+</body>
+</html>

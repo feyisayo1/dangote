@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="auth_3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="./asset/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dangote">
+        <section class="sidebar-con">
+            <div class="sidebar">
+                <div class="overlay"></div>
+
+                <div class="dan_logo">
+                    <img src="asset/dan-logo.png" alt="">
+                </div>
+   
+                <div class="home_nav">
+                    <a href="#">
+                        <div class="home_icon active">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0.671265L17.6585 8.24746L16.3415 9.75261L9 3.3288L1.6585 9.75261L0.341492 8.24746L9 0.671265Z" fill="#1D2490"/>
+                                    <path d="M9 5.73316L16.0714 12.0109V19H11V14H7V19H2V11.9554L9 5.73316Z" fill="#1D2490"/>
+                                    </svg>
+                                    
+                            <!-- <img src="asset/house.png" alt=""> -->
+                            <p>Overview</p>
+                        </div>
+                    </a>
+
+                    <a href="auth_1.html">
+                        <div class="home_icon ">
+                                <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.59991 5.4C1.59991 2.41766 4.01758 0 6.99991 0C9.98225 0 12.3999 2.41766 12.3999 5.4V7.04C13.3128 7.2253 13.9999 8.03241 13.9999 9V17C13.9999 18.1046 13.1045 19 11.9999 19H1.99994C0.895369 19 -6.10352e-05 18.1046 -6.10352e-05 17V9C-6.10352e-05 8.03243 0.687031 7.22533 1.59991 7.04001V5.4ZM10.5999 5.4V7H3.39991V5.4C3.39991 3.41177 5.01169 1.8 6.99991 1.8C8.98814 1.8 10.5999 3.41178 10.5999 5.4ZM7.99994 11C7.99994 10.4477 7.55222 10 6.99994 10C6.44765 10 5.99994 10.4477 5.99994 11V15C5.99994 15.5523 6.44765 16 6.99994 16C7.55222 16 7.99994 15.5523 7.99994 15V11Z" fill="white"/>
+                                    </svg>
+                                    
+                            <!-- <img src="asset/Subtract.png" alt=""> -->
+                            <p>Authentication</p>
+                        </div>
+                    </a>
+                    
+                    <a href="login.html">
+                        <div class="home_icon logout ">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.22222 0C0.994923 0 0 0.994923 0 2.22222V17.7778C0 19.0051 0.994923 20 2.22222 20H16.6667V17.7778H3.33333C2.71968 17.7778 2.22222 17.2803 2.22222 16.6667V3.33333C2.22222 2.71968 2.71968 2.22222 3.33333 2.22222H16.6667V0H2.22222Z" fill="white"/>
+                                    <path d="M20 9.94712L14.4445 4.44446V8.8889H4.44446V11.1111H14.4445V15.5556L20 9.94712Z" fill="white"/>
+                                    </svg>
+                                    
+                            <!-- <img src="asset/logout.png" alt=""> -->
+                            <p>Logout</p>
+                        </div>
+                    </a>
+                        
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section class="main-content">
+            <div class="content-con"></div>
+             <!-- user-sec -->
+             <div class="user">
+                <img src="asset/profile.png" alt="">
+                <a href="#">abc@dangote.gmail</a>
+            </div>
+            <div>
+                <h1>Authentication</h1>
+                <h2>Verify vouchers for redemption</h2>
+                <h3>Verify voucher</h3>
+
+            </div>
+            <div class="input">
+                <div>
+                    <form class ="valid" action="">
+                        <input id="user_input" type="search" placeholder="Type voucher code/serial number">   
+                        <a id ="blue" href=""><input type="submit" value="verify"></a>
+                    </form>
+                </div>
+                <!-- <div class="verify_btn">
+                    <a href="#">Verify</a>
+                    <p>Verify</p>
+                </div> -->
+            </div>
+            
+            <div class="pop_up">
+                <div>&times;</div>
+                <img src="./asset/sad_emoji.png" alt="">
+                <p>This voucher doesn't exist</p>
+            </div>
+
+
+            <div class="table">
+                <table>
+                    <tr>
+                        <td>Batch Number</td>
+                        <td>Serial Number</td>
+                        <td>Redeemed</td>
+                        <td>Redemption Center</td>
+                        <td>Date</td>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>#12345678</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>00-00-0000</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
